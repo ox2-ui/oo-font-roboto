@@ -1,56 +1,26 @@
+### Roboto Font v15
 
-### RobotoDraft
+#### Added styles
+- Thin 100
+- Light 300
+- Normal 400
+- Normal 400 Italic
+- Medium 500
+- Bold 700
+- Bold 700 Italic
+- Ultra-Bold 900
 
-Using v3 of Google RobotoDraft font
+### Update Instructions:
+1. Update donwload-fonts.sh with new version links, you can find them by navigating to [Google Fonts](https://www.google.com/fonts) website selecting **Roboto** font with above mentioned styles and opening the generated link (https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,700italic,400italic,900) in your browser. At the time of writing to get `woff` links you should open in Firefox as Blink based browsers show links for `woff2` and Safari for `ttf`. **XXX** Need a better way of checking this.
 
-#### Reference
-``` css
+2. Run `donwload-fonts.sh` script from `update` folder in your terminal. ( might need to add execution permissions `chmod +x donwload-fonts.sh` ) this will download the latest version of the fonts and copy template files from `update/css-templates` to `lib` folder.
 
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: normal
-  font-weight: 100
-  src: local('RobotoDraft Thin'), local('RobotoDraft-Thin'), url(https://fonts.gstatic.com/s/robotodraft/v3/hope9NW9iJ5hh8P5PM_EA6wsIWd7evfOerjO4J_CQWU.woff) format('woff')
+3. Open `css` files in `lib` folder and generate DataURI's. In **Sublime Text** with **Emmet** plugin installed, place your cursor inside `url()` and select `Emmet Encode/Decode image to data:URL` from the Command Palette (CMD+SHIFT+P). This should generate data URIs in place of links. **XXX** Automate
 
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: normal
-  font-weight: 300
-  src: local('RobotoDraft Light'), local('RobotoDraft-Light'), url(https://fonts.gstatic.com/s/robotodraft/v3/u0_CMoUf3y3-4Ss4ci-VwfR_54zmj3SbGZQh3vCOwvY.woff) format('woff')
+### Font License
+Apache License, version 2.0
 
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: normal
-  font-weight: 400
-  src: local('RobotoDraft'), local('RobotoDraft-Regular'), url(https://fonts.gstatic.com/s/robotodraft/v3/0xES5Sl_v6oyT7dAKuoni7rIa-7acMAeDBVuclsi6Gc.woff) format('woff')
+More info: https://www.google.com/fonts/specimen/Roboto
 
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: normal
-  font-weight: 500
-  src: local('RobotoDraft Medium'), local('RobotoDraft-Medium'), url(https://fonts.gstatic.com/s/robotodraft/v3/u0_CMoUf3y3-4Ss4ci-VwaTA90I55Xt7owhZwpPnMsc.woff) format('woff')
-
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: normal
-  font-weight: 700
-  src: local('RobotoDraft Bold'), local('RobotoDraft-Bold'), url(https://fonts.gstatic.com/s/robotodraft/v3/u0_CMoUf3y3-4Ss4ci-VwRbnBKKEOwRKgsHDreGcocg.woff) format('woff')
-
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: normal
-  font-weight: 900
-  src: local('RobotoDraft Black'), local('RobotoDraft-Black'), url(https://fonts.gstatic.com/s/robotodraft/v3/u0_CMoUf3y3-4Ss4ci-VwXgBFnK3b21TxbHkzaX7fVo.woff) format('woff')
-
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: italic
-  font-weight: 400
-  src: local('RobotoDraft Italic'), local('RobotoDraft-Italic'), url(https://fonts.gstatic.com/s/robotodraft/v3/er-TIW55l9KWsTS1x9bTfoo3ZslTYfJv0R05CazkwN8.woff) format('woff')
-
-@font-face
-  font-family: 'RobotoDraft'
-  font-style: italic
-  font-weight: 700
-  src: local('RobotoDraft Bold Italic'), local('RobotoDraft-BoldItalic'), url(https://fonts.gstatic.com/s/robotodraft/v3/5SAvdU0uYYlH8OURAykt5yHgNb6vKVPdRA9LSAKGxzw.woff) format('woff')
-```
+### Package License
+MIT

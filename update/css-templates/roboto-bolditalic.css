@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(../update/woff/Roboto-BoldItalic.woff) format('woff');
+}
