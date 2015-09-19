@@ -8,11 +8,11 @@ curl -o "woff/Roboto-Black.woff" http://fonts.gstatic.com/s/roboto/v15/mnpfi9pxY
 curl -o "woff/Roboto-Italic.woff" http://fonts.gstatic.com/s/roboto/v15/1pO9eUAp8pSF8VnRTP3xnnYhjbSpvc47ee6xR_80Hnw.woff
 curl -o "woff/Roboto-BoldItalic.woff" http://fonts.gstatic.com/s/roboto/v15/t6Nd4cfPRhZP44Q5QAjcC7rIa-7acMAeDBVuclsi6Gc.woff
 echo "Copying new css template files to lib"
-cp css-templates/roboto-black.css ../lib/roboto-black.css
-cp css-templates/roboto-bold.css ../lib/roboto-bold.css
-cp css-templates/roboto-bolditalic.css ../lib/roboto-bolditalic.css
-cp css-templates/roboto-italic.css ../lib/roboto-italic.css
-cp css-templates/roboto-light.css ../lib/roboto-medium.css
-cp css-templates/roboto-medium.css ../lib/roboto-medium.css
-cp css-templates/roboto-regular.css ../lib/roboto-regular.css
 cp css-templates/roboto-thin.css ../lib/roboto-thin.css
+cp css-templates/roboto-light.css ../lib/roboto-light.css
+cp css-templates/roboto-regular.css ../lib/roboto-regular.css
+cp css-templates/roboto-medium.css ../lib/roboto-medium.css
+cp css-templates/roboto-bold.css ../lib/roboto-bold.css
+cp css-templates/roboto-black.css ../lib/roboto-black.css
+cp css-templates/roboto-italic.css ../lib/roboto-italic.css
+cp css-templates/roboto-bolditalic.css ../lib/roboto-bolditalic.css

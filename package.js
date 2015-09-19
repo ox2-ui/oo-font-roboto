@@ -11,14 +11,14 @@ var CS = [C, S];
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.2.1');
-  api.addFiles('lib/roboto-black.css', C);
-  api.addFiles('lib/roboto-bold.css', C);
-  api.addFiles('lib/roboto-bolditalic.css', C);
-  api.addFiles('lib/roboto-italic.css', C);
-  api.addFiles('lib/roboto-light.css', C);
-  api.addFiles('lib/roboto-medium.css', C);
-  api.addFiles('lib/roboto-regular.css', C);
   api.addFiles('lib/roboto-thin.css', C);
+  api.addFiles('lib/roboto-light.css', C);
+  api.addFiles('lib/roboto-regular.css', C);
+  api.addFiles('lib/roboto-medium.css', C);
+  api.addFiles('lib/roboto-bold.css', C);
+  api.addFiles('lib/roboto-black.css', C);
+  api.addFiles('lib/roboto-italic.css', C);
+  api.addFiles('lib/roboto-bolditalic.css', C);
 });
 
 Package.onTest(function(api) {
