@@ -1,8 +1,8 @@
 Package.describe({
   name: 'ox2:font-roboto',
-  summary: 'Roboto font',
-  version: '1.15.0',
-  git: 'https://github.com/ox2/oo-font-roboto'
+  summary: 'TESTING_DO_NOT_USE Roboto font',
+  version: '1.15.0'
+  // git: 'https://github.com/ox2/oo-font-roboto'
 });
 
 var S = 'server';
